@@ -51,7 +51,7 @@ h4 {
 
 .subtitle {
 	padding-top: 5px;
-	max-width: 50%;
+	max-width: 100%;
 	
 }
 
@@ -64,7 +64,7 @@ h4 {
 	border-radius: 15px;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	min-width: 75%;
+	min-width: 100%;
 }
 
 .subheader {
