@@ -36,16 +36,17 @@ h3 {
 
 h4 {
 	font-style: italic;
-	font-size: x-small;
+	font-size: small;
 }
 .pageTitle {
 	background-color: rgb(255, 203, 0);
 	padding-top: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	border-radius: 15px;
-	margin-top: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	min-width: 100%;
 }
 
@@ -92,10 +93,6 @@ h4 {
 	font-size: 14px;
 	list-style-type: none;
 	margin: 0px;
-}
-
-.highlighted {
-	font-weight: bold;
 }
 
 /*
