@@ -72,6 +72,7 @@
 				a Linebreak, which don’t has content.</p>
 			</div>
 		</div>
+		
 		<div class="header"><h2>Lesson 2 - A Structured HTML Document</h2>
 	
 			<div class="subheader"><h3>Blocks and Inline Elements</h3></div>
@@ -111,8 +112,7 @@
 				because it’s easier to understand when you have to change something.</strong></p>
 			</div>
 
-			<div class="subheader"><h3>Dev Tools (Build-in Browser Extension 
-			Chrome/Firefox)</h3></div>
+			<div class="subheader"><h3>Dev Tools (Build-in Browser Extension Chrome/Firefox)</h3></div>
 			<div class="text">
 				<p>When you take a deeper insight with the Dev Tools of your Browser, 
 				you can see the advantage of writing properly formatted HTML Code.<br>
@@ -140,57 +140,125 @@
 			</div>
 		</div>
 	
-	</div>
-	<br>
-	<div class="stagetitle">
-		<h1>ND Programming - Stage 2</h1>
-		<div class="subtitle">
-			<h4>Work Session 1</h4>
-		</div>
-	</div>
-	
-	<div class="header"><h2>Lesson 1 - Concepts - Telling Computers What to Do</h2>
-		<h3 class="subheader">Computers</h3>
-			<div class="text">
-				<p>Unlike to most machines that were <strong>constructed</strong> 
-				for one or more specific functions, a computer can be <strong>
-				programmed</strong> to solve tasks of many different types.</p>
+		
+		<div class="stagetitle">
+			<h1>ND Programming - Stage 2</h1>
+			<div class="subtitle">
+				<h4>Work Session 1 - Concepts - Telling Computers What to Do</h4>
 			</div>
+		</div>
 	
-		<h3 class="subheader">Programms</h3>
-			<div class="text">
-				<p>A program consists of a <strong>sequence</strong> of operating procedures which 
-				result in a more or less meaningful Programm at the end. <br>
-				This could be an editor, a spreadsheetcalculation or even a game.</p>
+		<div class="header"><h2>Lesson 1 - Introduction to "Serious" Programming</h2>
+			<h3 class="subheader">Computers</h3>
+				<div class="text">
+					<p>Unlike to most machines that were <strong>constructed</strong> 
+					for one or more specific functions, a computer can be <strong>
+					programmed</strong> to solve tasks of many different types.</p>
+				</div>
+		
+			<h3 class="subheader">Programms</h3>
+				<div class="text">
+					<p>A program consists of a <strong>sequence</strong> of operating procedures which 
+					result in a more or less meaningful Programm at the end. <br>
+					This could be an editor, a spreadsheetcalculation or even a game.</p>
+			</div>
+			
+			<h3 class="subheader">Programming Languages</h3>
+				<div class="text">
+					<p>There are different languages to tell the computer how <strong>to do</strong>
+					something. 
+					Examples of common used languages are python, php, java, c(c++), 
+					javascript or go. <br>
+					The choice of language is mostly dependent on the type of program you 
+					plan to create.</p>
+			</div>
+			
+			<h3 class="subheader">Python</h3>
+				<div class="text">
+					<p>Python is an <strong>interpreted</strong> Programming language. When 
+					your run your code, the Interpreter tyies to translate it into Instructions 
+					that the computer can execute.<br>
+					In Python or other Programming languages exist Rules how commands, expressions 
+					or operators have to be written. This Grammar is like every other language, 
+					very special for each kind of language.</p>
+			</div>
+			
+			<h3 class="subheader">Python Grammar Examples</h3>
+				<div class="text">
+					<p>Expressions:<br>
+					<span class="codeExample">"print 1 + 1"           # valid Expression<br>
+					"print 1 + 1 +"         # invalid Expression<br></span>
+					</p>
+			</div>		
 		</div>
 		
-		<h3 class="subheader">Programming Languages</h3>
-			<div class="text">
-				<p>There are different languages to tell the computer how <strong>to do</strong>
-				something. 
-				Examples of common used languages are python, php, java, c(c++), 
-				javascript or go. <br>
-				The choice of language is mostly dependent on the type of program you 
-				plan to create.</p>
+		<div class="header"><h2>Lesson 2 - Variables and Strings</h2>
+			<h3 class="subheader">A variable in Python</h3>
+				<div class="text">
+					<p>A variable defines a fixed name for a variable Value.<br>
+					Example in Python: <br>     
+					<span class="codeExample">fixed_name = 42</span><br>
+					In the Example above the value of "42" is assigned to the variable 
+					"fixed_name". <br>
+					This assingment is expressed with one single equal sign. <br>
+					You can use those variables in further operations or expressions.<br>
+					Also the value can be changed in further steps of your programm.
+					In the above Example we used numeric Values. Alphanumeric content 
+					is called a string. <br>
+					Simple strings are enclosed by  single, or double quotation Marks.<br>
+					Example: <br>
+					<span class="codeExample">fixed_name_for_string = "Test"</span> <br>
+					or <br>
+					<span class="codeExample">fixed_name_for_string = "Hello " + "Udacity"</span>
+					</p>
+			</div>			
 		</div>
 		
-		<h3 class="subheader">Python</h3>
-			<div class="text">
-				<p>Python is an <strong>interpreted</strong> Programming language. When 
-				your run your code, the Interpreter tyies to translate it into Instructions 
-				that the computer can execute.<br>
-				In Python or other Programming languages exist Rules how commands, expressions 
-				or operators have to be written. This Grammar is like every other language, 
-				very special for each kind of language.</p>
+		<div class="header"><h2>Lesson 3 - Functions</h2>
+			<h3 class="subheader">Functions</h3>
+				<div class="text">
+					<p>Functions are useful procedures to <strong>avoid repetition</strong> 
+					of programing steps and help you to create <strong>clean code</strong> 
+					that could read more easily.<br>
+					It needs to be defined by a name and could take some <strong>input</strong> 
+					(parameters) that will be <strong>processed</strong> within the 
+					function code.</p>
+					Example:<br>
+					<ul class="codeExample">
+						<li>def my_function(input1):</li>
+						<li>
+							<ul class="codeExample">
+								<li>input1 = input1 + 42</li>
+							</ul>
+							<ul class="codeExample">
+								<li>print(input1)</li>
+								</ul>
+						</li>
+						<li>my_function(1)</li>
+					</ul><br>
+					<span class="codeExample">>>>43</span><br>
+					
+					<p>The <strong>output</strong> of your function could be given 
+					<strong>direct</strong> like in above, or is <strong>returned</strong> 
+					to the "caller" of the function. </p>
+					Example:<br>
+					<ul class="codeExample">
+						<li>def my_function(input1):</li>
+						<li>
+							<ul class="codeExample">
+								<li>input1 = input1 + 42</li>
+							</ul>
+							<ul class="codeExample">
+								<li>return input1</li>
+							</ul>
+						</li>
+						<li>print my_function(1)</li>
+					</ul><br>
+				</div>
 		</div>
 		
-		<h3 class="subheader">Python Grammar Examples</h3>
-			<div class="text">
-				<p>Expressions:<br>
-				<span class="codeExample">"print 1 + 1"           # valid Expression<br>
-				"print 1 + 1 +"         # invalid Expression<br></span>
-				</p>
-		</div>		
-	</div>
+		
+		
+	
 </body>
 </html>
