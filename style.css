@@ -44,7 +44,7 @@ br {
   display: block;
   font-size: 24%;
 }
-.pageTitle {
+.stagetitle {
 	background-color: rgb(255, 203, 0);
 	padding-top: 10px;
 	padding-left: 20px;
@@ -99,6 +99,7 @@ br {
 	font-size: 14px;
 	list-style-type: none;
 	margin: 0px;
+	
 }
 
 /*
