@@ -1,26 +1,7 @@
 # My modified Version of the example Script
-def generate_concept_HTML(concept_title, concept_description):
-    html_text_1 = '''
-<div class="concept">
-    <div class="concept-title">
-        ''' + concept_title
-    html_text_2 = '''
-    </div>
-    <div class="concept-description">
-        ''' + concept_description
-    html_text_3 = '''
-    </div>
-</div>
-<br>
-''' # added <br> Tag to seperate conecepts
-    
-    full_html_text = html_text_1 + html_text_2 + html_text_3
-    return full_html_text
-
 def make_page_header(styletype):
 	# create Pageheader function with Style selector
-	
-	# define common Style
+		# define common Style
 	common_style = """
 		<style type="text/css">
 		* {
@@ -90,15 +71,36 @@ def make_page_header(styletype):
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Udacity Stage1: My Notes</title>
-		<link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />""" + selected_style + """
-		<link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Udacity Stage2: Notes generated with script</title>
+		<link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />""" + selected_style + """
+		<link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
 	</head>
+	<body>
 	"""	
 	return headerHTML
+	
+def generate_concept_HTML(concept_title, concept_description):
+	while True:
+		html_text_1 = '''
+	<div class="concept">
+		<div class="concept-title">
+			''' + concept_title
+		html_text_2 = '''
+		</div>
+		<div class="concept-description">
+			''' + concept_description
+		html_text_3 = '''
+		</div>
+	</div>
+	<br>
+	''' # added <br> Tag to seperate conecepts
+		full_html_text = html_text_1 + html_text_2 + html_text_3
+		return full_html_text
+		break
+    
 	
 def make_page_footer():
 	# make Pagefooter function
@@ -114,21 +116,20 @@ def make_HTML(concepts,style):
 	for concept in concepts:
 		HTML += generate_concept_HTML(concept[0],concept[1])
 	
-	
 	HTML += make_page_footer() # add Pagefooter
 	return HTML
 
 	
-# My pagecontent
+# My pagecontent - Example extended
 EXAMPLE_CONCEPT = [["Computers","""
 Unlike to most machines that were <strong>constructed</strong> 
 for one or more specific functions, a computer can be <strong>
-programmed</strong> to solve tasks of many different types."""],
-["Programms","""
+programmed</strong> to solve tasks of many different types."""]]
+EXAMPLE_CONCEPT.append(["Programms","""
 A program consists of a <strong>sequence</strong> of operating procedures which 
 result in a more or less meaningful Programm at the end. <br>
-This could be an editor, a spreadsheetcalculation or even a game."""],
-["Programming Languages","""
+This could be an editor, a spreadsheetcalculation or even a game."""])
+EXAMPLE_CONCEPT += [["Programming Languages","""
 There are different languages to tell the computer how <strong>to do</strong>
 something. <br>Examples of common used languages are python, php, java, c(c++), 
 javascript or go. <br>The choice of language is mostly dependent on the type of program you 
@@ -136,4 +137,4 @@ plan to create."""]]
 
 
 
-print make_HTML(EXAMPLE_CONCEPT,"x") # select Big Style
+print make_HTML(EXAMPLE_CONCEPT,"big") # select Big Style
