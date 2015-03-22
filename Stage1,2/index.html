@@ -232,7 +232,7 @@
 							</ul>
 							<ul class="codeExample">
 								<li>print(input1)</li>
-								</ul>
+							</ul>
 						</li>
 						<li>my_function(1)</li>
 					</ul><br>
@@ -256,7 +256,204 @@
 					</ul><br>
 				</div>
 		</div>
+
+		<div class="header"><h2>Lesson 4 - Decisions and Repetition</h2>
+			<h3 class="subheader">Simple Decisions - if: elif: else:</h3>
+				<div class="text">
+					<p>With the combination of decisions and repetitions our 
+					Programms are able to process more than one sequence of Steps.<br>
+					We can process bigs Lists or do multiple calculations on continuous 
+					Inputs, depending on other decisions.</p>
+					Examples:<br>
+					<ul class="codeExample">
+						<li>def weekend(day):</li>
+							<ul class="codeExample">
+								<li>if day == &quot;Saturday&quot; or day == &quot;Sunday&quot;:</li>
+								<ul class="codeExample">
+									<li>return True</li>
+								</ul>							
+							</ul>
+							<ul class="codeExample">
+								<li>else:</li>
+								<ul class="codeExample">
+									<li>return False</li>
+								</ul>
+							</ul>
+						
+					</ul><br>
+					
+					<p>An other variant of the decision could be like this:</p>
+					<ul class="codeExample">
+						<li>def weekend(day):</li>
+							<ul class="codeExample">
+								<li>if day == &quot;Saturday&quot;:</li>
+								<ul class="codeExample">
+									<li>return True</li>
+								</ul>							
+							</ul>
+							<ul class="codeExample">
+								<li>elif day == &quot;Sunday&quot;:</li>
+								<ul class="codeExample">
+									<li>return True</li>
+								</ul>
+							</ul>
+							<ul class="codeExample">
+								<li>else:</li>
+								<ul class="codeExample">
+									<li>return False</li>
+								</ul>
+							</ul>
+					</ul><br>
+					<p>Nested Decisions:</p>
+					<ul class="codeExample">
+						<li>def weekend(day):</li>
+							<ul class="codeExample">
+								<li>if day == &quot;Sunday&quot;:</li>
+								<ul class="codeExample">
+									<li>if weather == &quot;sunny&quot;:</li>
+									<ul class="codeExample">
+										<li>print &quot;Yeah!&quot;</li>
+									</ul>
+								</ul>							
+							</ul>
+							<ul class="codeExample">
+								<li>print &quot;Sunday&quot;:</li>
+							</ul>
+						</ul><br>
+				</div>
+			<h3 class="subheader">Repeating Decisions - while:</h3>
+				<div class="text">
+					<p>A while loop repeats a block of statements as long as the test expression evaluates to true.</p><br>
+					Example: <br>     
+					<ul class="codeExample">
+					<li>money = 5</li>
+					<li>while money > 0:</li>
+					<ul class="codeExample">
+						<li>print "You can buy icecream"</li>
+						<li>money = money - 1</li>
+					</ul>					
+					<li>print "You can't buy icecream"</li>
+				</ul>
+				<p>"while" loops could be interrupted with break</p>
+</span><br>
+
+					</p>
+			</div>					
+		</div>
 		
+		<div class="header"><h2>Lesson 5 - Lists and For Loops</h2>
+			<h3 class="subheader">Lists</h3>
+				<div class="text">
+					<p>Lists can contain numbers, strings, numbers and strings mixed or other lists.<br>
+					With lists we are are able to create structured Datasets.</p><br>
+					Examples: <br>     
+					<span class="codeExample">&gt;&gt;&gt; numbers = [1,2,3,7.5]<br>
+					&gt;&gt;&gt; strings = ['Google','Yahoo','altavista',';-)']<br>
+					&gt;&gt;&gt; mixed = [0,8,1,5,'Otto Normal',['0815','007','4711',42]]</span><br>
+					<p>Listelements can be accessed like this:</p><br>
+					<span class="codeExample">&gt;&gt;&gt; print numbers[3]<br>
+					7.5<br>
+					&gt;&gt;&gt; print mixed[5][3]<br>
+					42</span><br>
+					<p>Or <strong>sliced</strong>:</p><br>
+					<span class="codeExample">&gt;&gt;&gt; print strings[2:]<br>
+					['altavista', ';-)']</span><br>
+
+				</div>
+
+			<h3 class="subheader">Mutation</h3>
+				<div class="text">
+					<p>Mutation on Lists means that if you can replace one ore more elements of it, without 
+					"touching" the other elements.</p><br>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; letters = ['s','e','e']<br>
+					&gt;&gt;&gt; print letters<br>
+					['s', 'e', 'e']<br>
+					&gt;&gt;&gt; letters[2]  = 'a'<br>
+					&gt;&gt;&gt; print letters<br>
+					['s', 'e', 'a']</span><br>
+				</div>
+				
+			<h3 class="subheader">Aliasing</h3>
+				<div class="text">
+					<p>Aliasing means that you can refer to an Object with a different Name and modifications
+					assigned to the Aliasname are also done to the target Object.<br>
+					If the original Variable content get a new assignment, the Aliasname still 
+					points to the Object that it was assigned too.</p><br>
+				</div>
+				
+			<h3 class="subheader">List Operations </h3>
+				<div class="text">	
+					<strong>.append - Method</strong><br>
+					<p>With using the .append() Method on a List, you are able to add an element to the end of a List.</p><br>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; letters = ['s','e','e']<br>
+					&gt;&gt;&gt; print letters<br>
+					['s', 'e', 'e']<br>
+					&gt;&gt;&gt; letters<strong>.append</strong>('n')<br>
+					&gt;&gt;&gt; print letters<br>
+					['s', 'e', 'e', 'n']</span>
+					
+					<br>
+					<strong>List addition</strong><br>
+					<p>If two Lists are added with the '+' Operator a new list is created with the content of both lists.</p><br>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; list1 = ['a','b','c']<br>
+					&gt;&gt;&gt; list2 = [1,2,3]<br>
+					&gt;&gt;&gt; list3 = list1 <strong>+</strong> list2<br>
+					&gt;&gt;&gt; print list3<br>
+					['a', 'b', 'c', 1, 2, 3]</span><br>
+					
+					
+					<strong>len()</strong><br>
+					<p>The length (count of elements) of an List can be accessed with len(list)</p><br>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; print <strong>len</strong>(numbers)<br>
+					4</span><br>
+					
+					
+
+					<strong>Loops on Lists</strong><br>
+					<p>For a sequential access on all elements of a List (structured Dataset), we can use the allready
+					known while Loops, but with using for Loops it's much more simple.</p>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; list1 = ['a','b','c']<br>
+					&gt;&gt;&gt; <strong>for</strong> element <strong>in</strong> list1:<br>
+					...     print element<br>
+					...<br>
+					a<br>
+					b<br>
+					c<br>
+					&gt;&gt;&gt;</span><br>
+
+					<strong>List Index</strong><br>
+					<p>With the List Index method we can lookup the position of the first occurrence of an element.</p><br>
+					<p>If its not found, it returns an error.</p><br>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; list1 = ['a','b','c']<br>
+					&gt;&gt;&gt; list1<strong>.index</strong>('c')<br>
+					2<br>
+					&gt;&gt;&gt; list1<strong>.index</strong>('x')<br>
+					Traceback (most recent call last):<br>
+					  File "<stdin>", line 1, in <module><br>
+					ValueError: 'x' is not in list<br>
+					&gt;&gt;&gt;</span><br>
+
+					<strong>&quot;in / not in&quot;</strong><br>
+					<p>in / not in, are tests that check if an given element exists or not exists.</p><br>
+					They return True or False.<br>
+					Example:<br>
+					<span class="codeExample">&gt;&gt;&gt; list1 = ['a','b','c']<br>
+					&gt;&gt;&gt; print ('x' <strong>in</strong> list1)<br>
+					False<br>
+					&gt;&gt;&gt; print ('a' <strong>in</strong> list1)<br>
+					True<br>
+					&gt;&gt;&gt; print ('a' <strong>not in</strong> list1)<br>
+					False<br>
+					&gt;&gt;&gt; print ('x' <strong>not in</strong> list1)<br>
+					True<br>
+					&gt;&gt;&gt;</span><br>			
+		</div>		
 		
 		
 	
