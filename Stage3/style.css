@@ -18,6 +18,10 @@ body {
     display: flex;   
     flex-wrap: wrap;
 }
+a { 
+	color: #000; 
+	text-decoration: none
+	}
 h1  {
 	font-family: sans-serif;
 	font-weight: bolder;

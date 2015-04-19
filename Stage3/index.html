@@ -17,21 +17,27 @@
 				<h4>The Power of Abstraction</h4>
 			</div>
 		</div>
+		<div class="header"><h2><a id="content">Content:</a></h2>
+		<div class="subheader"><h3>Lessons:&nbsp;<a href="#lesson0">0</a>&nbsp;<a href="#lesson1">1</a>
+		<a href="#lesson2">2</a>&nbsp;<a href="#lesson3">3</a>&nbsp;-&nbsp;<a href="#vocabulary">
+		Vocabulary</a>&nbsp;-&nbsp;<a href="#codesamples">
 		
-		<div class="header"><h2>Lesson 0</h2>
+		Code samples</a></h3></div>
+		</div>
+		<div class="header"><h2><a id="lesson0">Lesson 0</a></h2>
 			<div class="subheader"><h3>What to Expect? - What Will We Create?</h3></div>
 			<div class="text">
 				<p>Introduction into the course.</p>
 				<p>Start with reflection of Basic Concepts if,while ...</p>
 			</div>
 		</div>	
-		<div class="header"><h2>Lesson 1</h2>
+		<div class="header"><h2><a id="lesson1">Lesson 1</a></h2>
 			<div class="subheader"><h3>Use Functions - "Take a break"</h3></div>
 			<div class="text">
 				<p>In the sample program we use the import statement on two librarys.<br>
 				- webbrowser and time<br>
 				We use webbrower with the method .open and time with the methods .ctime and .sleep<br>
-				This usage is called <strong>abstraction</strong></p>
+				This usage is called <strong>abstraction</strong>
 				A list of avaliable Functions of the Python Standard Library could be found at this Link 
 				<a href="https://docs.python.org/2.7/library">https://docs.python.org/2.7/library</a>
 				</p>
@@ -42,7 +48,7 @@
 				We use os.listdir in a loop two get all the Filenames inside the folder with the<br>
 				Pictures and os.rename to change their names to a new one that we transformed with the translate function.<br>
 				We also notice the differences of the used OS's while selecting the Path.<br>
-				Notice: An <strong>Exeption</strong> occurs when files not or already exist in our folder</p>
+				Notice: An <strong>Exeption</strong> occurs when files not or already exist in our folder
 				os is another Part of the Python Standard Library <a href="https://docs.python.org/2.7/library">
 				https://docs.python.org/2.7/library</a><br>
 				</p>
@@ -55,9 +61,10 @@
 				
 				</p>
 			</div>
+			<a href="#content">Back to Top</a>
 		</div>		
-		<div class="header"><h2>Lesson 2</h2>
-			<div class="subheader"><h3>Using Classes Drawing Turtles</h3></div>
+		<div class="header"><h2><a id="lesson2">Lesson 2</a></h2>
+			<div class="subheader"><h3>2a Using Classes Drawing Turtles</h3></div>
 			<div class="text">
 				<p>Importing the turtle Library and play around with the avaliable Methods<br>
 				
@@ -71,37 +78,101 @@
 				
 				</p>
 			</div>	
-		<div class="subheader"><h3>Lesson 2c - Accessing a Website with Code</h3></div>
+		<div class="subheader"><h3>2b - Accessing a Website with Code</h3></div>
 			<div class="text">
-				<p>How to use a Website to check for profanity words.<br>
+				<p>How to use a Webservice to send Text Messages.<br>
 				
 				</p>
 			</div>	
-			<div class="subheader"><h3>Classes that look like functions</h3></div>
+			<div class="subheader"><h3>Using classes not included in the Python Standard Library</h3></div>
+			<div class="text">
+				<p>We learn how include the downloaded Library and how to use it.<br>
+			When using the <strong>&quot;import&quot;</strong> we define which function from a module we want to use.<br>
+			The way how we write the import Line affects the was we have to write the Code that creates the Instance.<br> 
+			While creating an instance, a function named __init__ inside the module is called. <br>
+			A Class is a like a blueprint that we can use to create multiple Instances of an Object.
+				</p>
+			</div>	
+			<div class="subheader"><h3>2c - Accessing a Website with Code II</h3></div>
+			<div class="text">
+				<p>How to use a Website to check for profanity words.<br>
+				Some functions that are used very often are allway available in Python.<br>
+				They are listed in the <a href="https://docs.python.org/2/library/functions.html">Documentation 
+				of the Python Standard Library</a><br>
+				For the second Part we import the urllib Class from Python Standard Library and use it to send <br>
+				the Textinput the we readed from the File we opend win the first Part.<br>
+				Now we cant check the response from the Webservice an check it with if/elif/else to decide if <br>
+				there are curse Words in it.<br>				
+				</p>
+			</div>	
+			
+			<div class="subheader"><h3>Classes look like functions</h3></div>
 			<div class="text">
 				<p>While writing the code of our Profanity Editor, we discover <br>
-			that it looks like we are using a <strong>&quot;Function&quot;</strong> but when we took a<br>
-			closer look inside, we find the same __init__ functions like in other <strong>&quot;Classes&quot;</strong>.<br>				
+				that it looks like we are using a <strong>&quot;Function&quot;</strong> but when we took a<br>
+				closer look inside, we find the same __init__ functions like in other <strong>&quot;Classes&quot;</strong>.<br>				
+				This creates the needed space in Memory where we can work with the Object the we have <strong>&quot;instanciated&quot;</strong>
+
 				</p>
-			</div>	
-		<div class="subheader"><h3>Lesson 3 - Movie Website</h3></div>
+			</div>
+			<a href="#content">Back to Top</a>			
+		</div>	
+		<div class="header"><h2><a id="lesson3">Lesson 3</a></h2>
+		<div class="subheader"><h3>Building a Movie Website - Part 1: The class</h3></div>
 			<div class="text">
-				<p>Creating a class</p>
-			</div>	
-			<div class="subheader"><h3>Vocabulary</h3></div>
-			<div class="text">
-				<p><strong>Class</strong> - <br>				
-				<strong>Instance</strong> - <br>				
-				<strong>Constructor</strong> - <br>				
-				<strong>Self</strong> - <br>				
-				<strong>Instance Variables</strong> - <br>				
-				<strong>Instance Methods</strong> - <br>				
-				<strong>Class Variables</strong> - <br>				
+				<p>Creating our first class</p>
+				<p>For this project we will create our first <a href="#class">
+				<strong>&quot;class&quot;</strong></a><br>
+				We will define a Movie-Class using the Keyword <a href="#class">
+				<strong>&quot;class&quot;</strong></a> to display the different Movies on 
+				our Webpage.<br>
+				Now we are able to create multiple <a href="#instance">
+				<strong>&quot;Instances&quot;</strong></a> of our class<br>
+				First we put together all Datatypes and Functions that we want to put 
+				into our Class.<br> For proper Naming of our Class we take a look at the 
+				Codestyleguides for Python.<br>
+				Then we start with the <a href="#constructor"><strong>&quot;Constructor&quot;</strong></a>
+				Function called __init__ with the<br>Argument <a href="#self"><strong>
+				&quot;self&quot;</strong></a><br>Self means the Object self or the Instance we create.<br>
+				After that we add several Arguments that we want to process in our Class.<br>
+				When we create a new instance of our class we assign the Arguments to their matching 
+				<a href="#instancevariables"><strong>&quot;Instance Variables&quot;</strong></a><br>
+				Now we create our first <a href="#instancemethods"><strong>&quot;Instance Method&quot;</strong></a>
+				named <strong>&quot;show_trailer()&quot;</strong></a><br>
 				</p>
-			</div>	
-						
-		</div>		
+			</div>
+			<div class="subheader"><h3>Building a Movie Website - Part 2: Create HTML</h3></div>
+			<div class="text">
+				<p>Creating the HTML Output for our Page</p>
+				<p>For this project we first download the referenced File fresh_tomatoes.py<br>
+				This File contains the code that creates the HTML for our Moviepage.<br>
+				All we have to do is to import the File, create al List with our Movie Objects and<br>
+				call the function open_movies_page with the Objectlist as Argument.<br>
+				</p>
+			</div>
+			<div class="subheader"><h3>Building a Movie Website - Advanced Topics</h3></div>
+			<div class="text">
+				<p>Class Variables</p>
+				<p>Somtimes we need Variables that are not only specific to an instance only. 
+				</p>
+			</div>
+			
+			<a href="#content">Back to Top</a>
+		</div>
 		
-	
+		<div class="header"><h2><a id="vocabulary">Vocabulary</a></h2>
+		<div class="subheader"><h3>Need Words we learned</h3></div>
+			<div class="text">
+				<p><strong><a id="class">Class</strong></a> - <br>				
+				<strong><a id="instance">Instance</strong></a> - <br>				
+				<strong><a id="constructor">Constructor</a></strong> - <br>				
+				<strong><a id="self">Self</strong></a> - <br>				
+				<strong><a id="instancevariables">Instance Variables</strong></a> - <br>				
+				<strong><a id="instancemethods">Instance Methods</strong></a> - <br>				
+				<strong><a id="classvariables">Class Variables</strong></a> - <br>				
+				</p>
+			</div>	
+			<a href="#content">Back to Top</a>			
+		</div>		
 </body>
 </html>
